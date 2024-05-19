@@ -58,11 +58,9 @@ void toGrayscale(unsigned char *img, unsigned char *grayImg, int channels, int g
                 if (grayChannels == 2) {
                     grayImg[grayIndex + 1] = img[index + 3];
                 }
-                if ((index + 1) % y == 0) {
-                    fputc("\n", asciiText);
-                }
                 else toASCII(getGrayscaleChar((grayVal)), asciiText);
             }
+            fputc('\n', asciiText);
         }
 }
 
