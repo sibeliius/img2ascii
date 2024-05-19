@@ -65,7 +65,7 @@ void toGrayscale(unsigned char *img, unsigned char *grayImg, int channels, int g
 }
 
 unsigned char getGrayscaleChar(unsigned char grayVal) {
-    char* charList = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`\'.";
+    char* charList = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`\'. ";
     return charList[(int)ceil(strlen(charList) - 1 ) * grayVal / 255];
 }
 
