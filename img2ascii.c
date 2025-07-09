@@ -41,6 +41,7 @@ int main(int argc, char **argv) {
 
     free(grayImg);
     stbi_image_free(image);
+    fclose(asciiText)
     return 0;
 }
 
